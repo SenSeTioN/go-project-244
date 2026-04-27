@@ -27,12 +27,15 @@ jobs:
         run: go mod download
 
       - name: Run linter
-        uses: golangci/golangci-lint-action@v6
+        uses: golangci/golangci-lint-action@v7
         with:
-          version: latest
+          version: v2.0.2
 
       - name: Run tests with coverage
         run: go test -coverpkg=./... -coverprofile=coverage.out ./...
+
+      - name: Strip module prefix from coverage paths
+        run: sed -i 's|^code/||' coverage.out
 
       - name: SonarQube scan
         uses: SonarSource/sonarqube-scan-action@master
