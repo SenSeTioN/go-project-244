@@ -14,23 +14,19 @@
 
 ## Команды утилиты
 
-| Команда                                              | Описание                              |
-|------------------------------------------------------|---------------------------------------|
-| `./bin/gendiff -h`                                   | Показать справку                      |
-| `./bin/gendiff file1 file2`                          | Дифф в формате `stylish` (по умолчанию) |
-| `./bin/gendiff -f plain file1 file2`                 | Дифф в формате `plain`                |
-| `./bin/gendiff -f json file1 file2`                  | Дифф в формате `json`                 |
+| Команда                              | Описание                                |
+| ------------------------------------ | --------------------------------------- |
+| `./bin/gendiff -h`                   | Показать справку                        |
+| `./bin/gendiff file1 file2`          | Дифф в формате `stylish` (по умолчанию) |
+| `./bin/gendiff -f plain file1 file2` | Дифф в формате `plain`                  |
+| `./bin/gendiff -f json file1 file2`  | Дифф в формате `json`                   |
 
 ## Команды Makefile
 
-| Команда              | Описание                                          |
-|----------------------|---------------------------------------------------|
-| `make build`         | Сборка бинарника в `bin/gendiff`                  |
-| `make run`           | Сборка и запуск без аргументов (покажет справку)  |
-| `make test`          | Запуск тестов                                     |
-| `make test-coverage` | Тесты с покрытием → `coverage.out`                |
-| `make lint`          | Запуск `golangci-lint`                            |
-
-## Asciinema
-
-[![asciicast](https://asciinema.org/a/REPLACE_ID.svg)](https://asciinema.org/a/REPLACE_ID)
+| Команда              | Описание                                         |
+| -------------------- | ------------------------------------------------ |
+| `make build`         | Сборка бинарника в `bin/gendiff`                 |
+| `make run`           | Сборка и запуск без аргументов (покажет справку) |
+| `make test`          | Запуск тестов                                    |
+| `make test-coverage` | Тесты с покрытием → `coverage.out`               |
+| `make lint`          | Запуск `golangci-lint`                           |

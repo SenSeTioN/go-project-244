@@ -8,29 +8,10 @@ import (
 	"os"
 	"strings"
 
-	"code/diff"
-	"code/formatters"
-	"code/parsers"
+	"code"
 
 	"github.com/urfave/cli/v2"
 )
-
-// GenDiff возвращает дифф двух файлов в указанном формате.
-// Пустой format означает форматер по умолчанию.
-func GenDiff(filepath1, filepath2, format string) (string, error) {
-	data1, err := parsers.Parse(filepath1)
-	if err != nil {
-		return "", err
-	}
-
-	data2, err := parsers.Parse(filepath2)
-	if err != nil {
-		return "", err
-	}
-
-	tree := diff.Build(data1, data2)
-	return formatters.Format(format, tree)
-}
 
 // stringifyFlag форматирует флаг для блока GLOBAL OPTIONS.
 func stringifyFlag(f cli.Flag) string {
@@ -84,7 +65,7 @@ func runDiff(c *cli.Context) error {
 		return cli.ShowAppHelp(c)
 	}
 
-	result, err := GenDiff(c.Args().Get(0), c.Args().Get(1), c.String("format"))
+	result, err := code.GenDiff(c.Args().Get(0), c.Args().Get(1), c.String("format"))
 	if err != nil {
 		return err
 	}
