@@ -93,9 +93,9 @@ func TestGenDiffNestedJSON(t *testing.T) {
 				t.Fatalf("GenDiff returned error: %v", err)
 			}
 
-			var parsed []map[string]any
+			var parsed map[string]any
 			if err := json.Unmarshal([]byte(got), &parsed); err != nil {
-				t.Fatalf("json output is not valid JSON: %v\n%s", err, got)
+				t.Fatalf("json output is not a valid JSON object: %v\n%s", err, got)
 			}
 
 			if tc.name == "json/json" && got != expected {
