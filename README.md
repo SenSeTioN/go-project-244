@@ -2,10 +2,10 @@
 
 [![Actions Status](https://github.com/SenSeTioN/go-project-244/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/SenSeTioN/go-project-244/actions)
 [![CI](https://github.com/SenSeTioN/go-project-244/actions/workflows/ci.yml/badge.svg)](https://github.com/SenSeTioN/go-project-244/actions/workflows/ci.yml)
-[![SonarQube Cloud](https://sonarcloud.io/images/project_badges/sonarcloud-highlight.svg)](https://sonarcloud.io/summary/new_code?id=SenSeTioN_go-project-244)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=SenSeTioN_go-project-244&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=SenSeTioN_go-project-244)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=SenSeTioN_go-project-244&metric=coverage)](https://sonarcloud.io/summary/new_code?id=SenSeTioN_go-project-244)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=SenSeTioN_go-project-244&metric=bugs)](https://sonarcloud.io/summary/new_code?id=SenSeTioN_go-project-244)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=SenSeTioN_go-project-244&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=SenSeTioN_go-project-244)
 
 ## О проекте
 
