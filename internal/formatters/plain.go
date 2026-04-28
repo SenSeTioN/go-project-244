@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"code/diff"
+	"code/internal/diff"
 )
 
 func formatPlain(nodes []diff.Node) string {

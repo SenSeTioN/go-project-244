@@ -5,7 +5,7 @@ import (
 	"sort"
 	"strings"
 
-	"code/diff"
+	"code/internal/diff"
 )
 
 const stylishIndent = 4

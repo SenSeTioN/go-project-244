@@ -4,7 +4,7 @@ package formatters
 import (
 	"fmt"
 
-	"code/diff"
+	"code/internal/diff"
 )
 
 // DefaultFormat — форматер по умолчанию.

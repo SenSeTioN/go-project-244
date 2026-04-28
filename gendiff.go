@@ -2,9 +2,9 @@
 package code
 
 import (
-	"code/diff"
-	"code/formatters"
-	"code/parsers"
+	"code/internal/diff"
+	"code/internal/formatters"
+	"code/internal/parsers"
 )
 
 // GenDiff возвращает дифф двух файлов в указанном формате.

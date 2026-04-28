@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"code/diff"
+	"code/internal/diff"
 )
 
 // formatJSON сериализует дерево диффа как объект (map),
